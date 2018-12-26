@@ -45,6 +45,7 @@ if ( ! function_exists( 'cfreshc_setup' ) ) :
 		// This theme uses wp_nav_menu() in one location.
 		register_nav_menus( array(
 			'menu-1' => esc_html__( 'Primary', 'cfreshc' ),
+			'social-media' => esc_html__('Social Media', 'cfreshc'),
 		) );
 
 		/*
@@ -81,7 +82,24 @@ if ( ! function_exists( 'cfreshc_setup' ) ) :
 		) );
 	}
 endif;
+
+// Add Announcement Posts
 add_action( 'after_setup_theme', 'cfreshc_setup' );
+
+function create_post_type() {
+  register_post_type( 'announcement',
+    array(
+      'labels' => array(
+        'name' => __( 'Announcements' ),
+        'singular_name' => __( 'Announcement' )
+      ),
+      'public' => true,
+      'has_archive' => true,
+      'rewrite' => array('slug' => 'announcements'),
+    )
+  );
+}
+add_action( 'init', 'create_post_type' );
 
 /**
  * Set the content width in pixels, based on the theme's design and stylesheet.
