@@ -45,7 +45,6 @@
 						</a>
 					</li>
 				</ul>
-				<div class="cfr-search"><i class="fas fa-search"></i></div>
 			</div>
 		</div><!-- .site-branding -->
 		
