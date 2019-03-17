@@ -908,7 +908,7 @@ h2 {
     display: flex;
     align-items: center; }
   .cfr-nav-wrapper .main-navigation {
-    flex: 0 60%;
+    flex: 0 70%;
     margin-left: auto; }
     .cfr-nav-wrapper .main-navigation li {
       margin: 0 .5em; }
