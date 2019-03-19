@@ -10,9 +10,20 @@
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	<header class="entry-header cfr-post-header">
-		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
-	</header><!-- .entry-header -->
+	<?php $header_img = get_field('header_background_image');
+	if ($header_img) : ?>
+		<header class="cfr-hero" style="background-image: url(<?php the_field('header_background_image') ?>">
+			<div class="cfr-wrapper">
+				<div class="cfr-hero-content">
+					<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
+				</div>
+			</div>
+		</header><!-- .entry-header -->
+	<?php else : ?>
+		<header class="entry-header cfr-post-header">
+			<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
+		</header><!-- .entry-header -->
+	<?php endif; ?>
 
 	<?php cfreshc_post_thumbnail(); ?>
 

@@ -44,6 +44,12 @@
 							<span class="acc-hidden">Twitter</span>
 						</a>
 					</li>
+					<li>
+						<a href="https://www.instagram.com/cfreshc/" class="cfr-twitter">
+							<i class="fab fa-instagram"></i>
+							<span class="acc-hidden">Instagram</span>
+						</a>
+					</li>
 				</ul>
 			</div>
 		</div><!-- .site-branding -->
