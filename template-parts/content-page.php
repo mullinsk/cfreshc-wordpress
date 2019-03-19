@@ -15,7 +15,7 @@
 		<header class="cfr-hero" style="background-image: url(<?php the_field('header_background_image') ?>">
 			<div class="cfr-wrapper">
 				<div class="cfr-hero-content">
-					<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
+					<?php the_title( '<h1 class="entry-title cfr-hero-title">', '</h1>' ); ?>
 				</div>
 			</div>
 		</header><!-- .entry-header -->

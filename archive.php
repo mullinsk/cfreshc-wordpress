@@ -14,9 +14,20 @@ get_header();
 		<main id="main" class="site-main">
 
 		<?php if ( have_posts() ) : ?>
-				<header class="entry-header cfr-post-header">
-					<h1 class="entry-title"><?php echo get_the_archive_title(); ?></h1>
-				</header>
+			<?php $header_img = get_field('header_background_image');
+			if ($header_img) : ?>
+				<header class="cfr-hero" style="background-image: url(<?php the_field('header_background_image') ?>">
+					<div class="cfr-wrapper">
+						<div class="cfr-hero-content">
+							<?php the_archive_title( '<h1 class="entry-title cfr-hero-title">', '</h1>' ); ?>
+						</div>
+					</div>
+				</header><!-- .entry-header -->
+				<?php else : ?>
+					<header class="entry-header cfr-post-header">
+						<?php the_archive_title( '<h1 class="entry-title">', '</h1>' ); ?>
+					</header><!-- .entry-header -->
+				<?php endif; ?>
 				<?php
 
 			/* Start the Loop */
