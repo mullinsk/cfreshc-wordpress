@@ -307,3 +307,58 @@ h2 {
 		margin-top: 1rem;
 	}
 }
+
+.comment-meta {
+	margin-bottom: .5rem;
+}
+
+.comment-author {
+	margin-bottom: .5rem;
+	font-size: 18px;
+}
+
+.comment-list {
+	padding-left: 0;
+	margin-left: 0;
+}
+
+.comment {
+	border-top: 3px solid $purple-primary;
+	padding: 16px 24px;
+
+	.children {
+		margin-left: 0;
+		padding-left: 0;
+		margin-top: 16px;
+	}
+}
+
+.comment-reply-link {
+	border: 1px solid $purple-primary;
+	color: $purple-primary;
+	text-decoration: none;
+	display: inline-block;
+	border-radius: 4px;
+	padding: 0.25rem 1rem;
+
+	&:hover,
+	&:focus {
+		background-color: $purple-primary;
+		color: $white;
+	}
+}
+
+.comment-metadata {
+	a {
+		text-decoration: none;
+
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+	.edit-link {
+		display: block;
+		margin-top: .5rem;
+		font-size: 12px;
+	}
+}

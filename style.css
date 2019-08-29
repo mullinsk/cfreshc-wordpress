@@ -1037,6 +1037,46 @@ h2 {
   .cfr-excerpt p {
     margin-top: 1rem; }
 
+.comment-meta {
+  margin-bottom: .5rem; }
+
+.comment-author {
+  margin-bottom: .5rem;
+  font-size: 18px; }
+
+.comment-list {
+  padding-left: 0;
+  margin-left: 0; }
+
+.comment {
+  border-top: 3px solid #555da7;
+  padding: 16px 24px; }
+  .comment .children {
+    margin-left: 0;
+    padding-left: 0;
+    margin-top: 16px; }
+
+.comment-reply-link {
+  border: 1px solid #555da7;
+  color: #555da7;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 4px;
+  padding: 0.25rem 1rem; }
+  .comment-reply-link:hover, .comment-reply-link:focus {
+    background-color: #555da7;
+    color: #fff; }
+
+.comment-metadata a {
+  text-decoration: none; }
+  .comment-metadata a:hover {
+    text-decoration: underline; }
+
+.comment-metadata .edit-link {
+  display: block;
+  margin-top: .5rem;
+  font-size: 12px; }
+
 .btn {
   display: inline-block;
   text-decoration: none;
